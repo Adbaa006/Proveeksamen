@@ -1,0 +1,61 @@
+{% extends base.html %}
+{% block content %}
+    <div class="top-right">
+        <div class="person">
+            <a href="/logginn">
+                <div><img src="icons/logginn.svg" alt=""></div>
+            </a>
+        </div>
+        <div class="hjerte">
+            <a href="/favoritter">
+                <div><img src="icons/likt.svg" alt=""></div>
+            </a>
+        </div>
+        <div class="kurv">
+            <a href="/handlekurv">
+                <div><img src="icons/vogn.svg" alt=""></div>
+            </a>
+        </div>
+        <div class="glass">
+            <div class="sokefunksjon">
+                <button onclick="sokFunksjon()">
+                    <img class="sokKnapp" src="icons/sok.svg" alt="">
+                </button>
+                <div id="sokMeny" class="sokinnhold">
+                    <div class="sokboks">
+                        <div class="sokbar">
+                            <div class="tekst">
+                                <h4>Hva ser du etter?</h4>
+                                <div class="ikon1"><img src="icons/kryss.svg" alt=""></div>
+                            </div>
+                            <div class="skrive">
+                                <input type="text" placeholder="Skriv her...">
+                                <div class="sokenter">
+                                    <h5>Søk</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="forslag">
+                            <div class="populere">
+                                <h4>Populære søk</h4>
+                                <ul>
+                                    <li><p>Jakke</p></li>
+                                    <li><p>Bukse</p></li>
+                                    <li><p>kjole</p></li>
+                                </ul>
+                            </div>
+                            <div class="nye">
+                                <h4>Nyheter</h4>
+                                <ul>
+                                    <li><p>Jakke</p></li>
+                                    <li><p>Bukse</p></li>
+                                    <li><p>kjole</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>	
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

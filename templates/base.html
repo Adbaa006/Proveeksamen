@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Côte Serein</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="top-right">
+            <div class="person">
+                <a href="/innlogging">
+                    <div><img src="icons/logginn.svg" alt=""></div>
+                </a>
+            </div>
+            <div class="hjerte">
+                <a href="/favoritter">
+                    <div><img src="icons/likt.svg" alt=""></div>
+                </a>
+            </div>
+            <div class="kurv">
+                <a href="/handlekurv">
+                    <div><img src="icons/vogn.svg" alt=""></div>
+                </a>
+            </div>
+            <div class="glass">
+                <div class="sokefunksjon">
+                    <button onclick="sokFunksjon()">
+                        <img class="sokKnapp" src="icons/sok.svg" alt="">
+                    </button>
+                    <div id="sokMeny" class="sokinnhold">
+                        <div class="sokboks">
+                            <div class="sokbar">
+                                <div class="tekst">
+                                    <h4>Hva ser du etter?</h4>
+                                    <div class="ikon1"><img src="icons/kryss.svg" alt=""></div>
+                                </div>
+                                <div class="skrive">
+                                    <input type="text" placeholder="Skriv her...">
+                                    <div class="sokenter">
+                                        <h5>Søk</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="forslag">
+                                <div class="populere">
+                                    <h4>Populære søk</h4>
+                                    <ul>
+                                        <li><p>Jakke</p></li>
+                                        <li><p>Bukse</p></li>
+                                        <li><p>kjole</p></li>
+                                    </ul>
+                                </div>
+                                <div class="nye">
+                                    <h4>Nyheter</h4>
+                                    <ul>
+                                        <li><p>Jakke</p></li>
+                                        <li><p>Bukse</p></li>
+                                        <li><p>kjole</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>	
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+        <a href="/">Hjem</a>
+        <a href="/kategori/dame">Dame</a>
+        <a href="/kategori/herre">Herre</a>
+        <a href="/kategori/barn">Barn</a>
+        <a href="/kategori/accessories">Accessories</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <div class="hjelp">
+            <div class="butikkinfo">
+                <h3>Om Côte Serein</h3>
+                <ul>
+                    <li>Inspirert av den franske kysten og kjærligheten for solfylte dager</li>
+                    <li>Skandinavisk enkelhet møter middelhavsstil</li>
+                    <li>Et sommerunivers for deg som liker letthet, farger og finesse</li>
+                </ul>
+            </div>
+            <div class="finn">
+                <h3>Finn butikker</h3>
+                <ul>
+                    <li>Côte Serein finnes i utvalgte konseptbutikker og pop-ups</li>
+                    <li>Bruk vårt kart for å finne din nærmeste forhandler</li>
+                    <li>Følg med for kommende arrangementer og midlertidige sommerbutikker</li>
+                </ul>
+            </div>
+            <div class="sporsmol">
+            <h3>Hjelp</h3> 
+                <ul>
+                    <li>Svar på vanlige spørsmål finner du under "Kundeservice"</li>
+                    <li>Kontakt oss gjerne via e-post eller skjema dersom noe er uklart</li>
+                    <li>Vi hjelper deg gjerne med størrelser, levering og bytter</li>
+                </ul>
+            </div>
+            <div class="produsentinfo">
+                <h3>Om produsent</h3>
+                <ul>
+                    <li>Våre plagg er laget med omtanke og fokus på komfort</li>
+                    <li>Vi jobber med små leverandører og begrensede kolleksjoner</li>
+                    <li>Stoffene velges for å tåle både sommersol og hyppig bruk</li>
+                </ul>
+            </div>
+        </div>
+        <div class="info">
+            <div class="kontaktinfo">
+                <h3>Kontakt oss</h3>
+                <ul>
+                    <li>E-post: hei@coteserein.no</li>
+                    <li>Telefon: +47 12 34 56 78</li>
+                    <li>Åpningstider: Man–Fre 09:00–16:00</li>
+                </ul>
+            </div>
+            <div class="sosialemedier">
+                <h3>Følg oss</h3>
+                <ul>
+                    <li>Instagram: @coteserein.no</li>
+                    <li>Facebook: Côte Serein</li>
+                    <li>Pinterest: Côte Serein – Summer Mood</li>
+                </ul>
+            </div>
+            <div class="nyhetsbrev">
+                <h3>Meld deg på nyhetsbrevet vårt</h3>
+                <ul>
+                    <li>Få eksklusive tilbud, stilinspirasjon og nyheter først.</li>
+                    <li>E-post: hei@coteserein.no</li>
+                    <li>Du kan når som helst melde deg av.</li>
+                </ul>
+            </div>
+            <div class="rettigheter">
+                <h3>© Côte Serein</h3>
+                <ul>
+                    <li>2025 – Alle rettigheter reservert</li>
+                    <li>Personvern</li>
+                    <li>Kjøpsvilkår</li>
+                </ul>
+            </div>
+        </div>
+    </footer>

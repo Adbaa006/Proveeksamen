@@ -1,0 +1,779 @@
+@import url('https://fonts.cdnfonts.com/css/great-vibes');
+@import url('https://fonts.cdnfonts.com/css/swansea');
+* {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    border-spacing: 0;
+    line-height: 30px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    max-width: 1512px;
+}
+
+img,
+video,
+svg{
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+.grid-containerindex {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin: auto;
+    width: 100%;
+}
+h1 {
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 5rem;
+    color: rgb(33, 50, 84);
+}
+h2 {
+    font-family: 'Swansea', sans-serif;
+    font-size: xx-large;
+    font-weight: 200;
+    color: rgb(33, 50, 84);
+}
+h3 {
+    font-family: 'Swansea', sans-serif;
+    font-size: large;
+    font-weight: 200;
+    color: rgb(33, 50, 84);
+}
+h4 {
+    font-family: 'Swansea', sans-serif;
+    font-size: medium;
+    font-weight: 200;
+    color: rgb(33, 50, 84);
+}
+h5 {
+    font-family: 'Swansea', sans-serif;
+    font-size: medium;
+    font-weight: 200;
+    color: white;
+}
+h6 {
+    font-family: 'Swansea', sans-serif;
+    font-size: small;
+    font-weight: 200;
+    color: rgb(33, 50, 84);
+}
+p {
+    font-family: 'Swansea', sans-serif;
+    font-weight: 200;
+    color: rgb(33, 50, 84);
+    padding-top: 2rem;
+
+}
+a {
+   text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(33, 50, 84);
+}
+ul {
+    padding-left: 1rem;
+    font-family: 'Swansea', sans-serif;
+    font-weight: 200;
+    color: rgb(33, 50, 84);
+}
+li {
+    font-family: 'Swansea', sans-serif;
+    font-size: small;
+    color: rgb(33, 50, 84);
+}
+.container-forsteside,
+.container-produktbilde{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.container-produktbildegrid {
+    position: relative;
+    text-align: left;
+    color: white;   
+}
+.top-right {
+    position: absolute;
+    width: 12rem;
+    top: 3rem;
+    right: 6rem;
+    display: grid;
+    grid-template-columns: 52px 52px 52px 52px;
+    grid-template-rows: 52px;
+    grid-template-areas: 
+    'person hjerte kurv glass';
+    gap: 0;
+    justify-content: space-evenly;
+}
+.overst-hoyre {
+    position: absolute;
+    width: 3rem;
+    top: 3rem;
+    right: 3rem;
+}
+.overst-hoyregrid {
+    position: absolute;
+    width: 2rem;
+    top: 1rem;
+    right: 1rem;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.centered_lower {
+    position: absolute;
+    top: 40rem;
+    left: 55rem;
+    transform: translate(-70%, -70%);
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    justify-content: space-evenly;
+}
+
+.nyheter {
+    position: relative;
+    width: auto;
+    height: 30rem;
+    background-color: yellow;
+}
+
+.nyhettekst {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+header {
+    width: auto;
+    padding-top: 5rem;
+    padding-left: 5.1rem;
+    padding-right: 2.5rem;
+    background-color: rgb(255, 255, 219);
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 6rem;
+    grid-template-areas: 
+    'kontakt navn ikoner';
+    gap: none;
+    justify-content: space-evenly;
+}
+.ikoner{    
+    top: 4.5rem;
+    right: 6rem;
+    position: absolute;
+    width: 12rem;
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px;
+    grid-template-rows: 40px;
+    grid-template-areas: 
+    'person hjerte kurv glass';
+    gap: 0;
+    justify-content: space-evenly;
+}
+.hjelp {
+    display: grid;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 13.5rem 13.5rem 13.5rem 13.5rem;
+    grid-template-rows: 18rem ;
+    grid-template-areas: 
+    'butikkinfo finn sporsmol produsentinfo';
+    gap: 1.5rem;
+    padding: 2rem;
+    outline-color: black;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 219)
+}
+.info {
+    display: grid;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 23.5rem 23.5rem 23.5rem 23.5rem;
+    grid-template-rows: 10rem ;
+    grid-template-areas: 
+    'kontaktinfo sosialemedier nyhetsbrev rettigheter';
+    gap: 0;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    outline-color: black;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 188)
+}
+
+.overskrift {
+    margin: auto;
+    width: 50rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+nav {
+    margin: auto;
+    width: 70rem;
+    height: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nav2 {
+    margin: auto;
+    width: 70rem;
+    height: 3rem;
+    padding-left: 2.2rem;
+}
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  color: rgb(33, 50, 84);
+}
+ul.breadcrumb li {
+  display: inline;
+  color: rgb(33, 50, 84);
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  content: "/\00a0";
+  color: rgb(33, 50, 84);
+}
+ul.breadcrumb li a {
+  text-decoration: none;
+  color: rgb(33, 50, 84);
+}
+ul.breadcrumb li a:hover {
+  text-decoration: underline;
+  color: rgb(33, 50, 84);
+}
+.knapper {
+    margin: auto;
+    width: 63.7rem;
+    height: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sorterKnapp {
+    font-family: 'Swansea', sans-serif;
+    background-color: white;
+    color:rgb(33, 50, 84);
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.sorter {
+    position: relative;
+    display: inline-block;
+}
+
+.sorteringsinnhold {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.sorteringsinnhold a {
+    color: rgb(33, 50, 84);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.sorter a:hover {
+    background-color: #e8e8e8;
+}
+.sokKnapp {
+  color: rgb(33, 50, 84);
+  border: none;
+  cursor: pointer;
+}
+.sokbar {
+  position: relative;
+  display: inline-block;
+}
+.sokinnhold {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.show {
+    display: block;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.sokbar a:hover {background-color: #ddd;}
+#sokMeny {
+  width: 28rem;
+  margin: auto;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  height: fit-content;
+  position: fixed;
+  top: 6rem;
+  left: 57rem;
+}
+#sokMeny2 {
+  width: 28rem;
+  margin: auto;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  height: fit-content;
+  position: fixed;
+  top: 7.5rem;
+  left: 54rem;
+}
+.tekst {
+  width: 30rem;
+  height: 1.8rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+.ikon {
+    width: 2rem;
+    cursor: pointer;
+}
+.ikon1 {
+    width: 2rem;
+    cursor: pointer;
+    position: fixed;
+    top: 7rem;
+    left: 84rem;
+}
+.ikon2 {
+    width: 2rem;
+    cursor: pointer;
+    position: fixed;
+    top: 8.3rem;
+    left: 82rem;
+}
+.skrive {
+  margin: auto;
+  width: 30rem;
+  height: 1.8rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+.text {
+  width: 25rem;
+  outline: auto;
+}
+input {
+    border: solid rgb(61, 61, 61) 2px;
+}
+.sokenter {
+  margin: auto;
+  width: 3rem;
+  height: 2rem;
+  background-color: rgb(33, 50, 84);
+  color: white;
+  position: fixed;
+    top: 9.7rem;
+    left: 83.5rem;
+}
+.sokenter2 {
+    margin: auto;
+    width: 3rem;
+    height: 2rem;
+    background-color: rgb(33, 50, 84);
+    color: white;
+    position: fixed;
+    top: 11.2rem;
+    left: 81.5rem;
+    text-align: center;
+}
+.forslag {
+  width: 30rem;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.populere {
+  margin: 2rem;
+}
+.nye {
+  margin: 2rem;
+}
+.tekst-ikon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.filter {
+    width: 35rem;
+    height: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.bla {
+    width: 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    height: 1.8rem;
+}
+
+.snarvei {
+    padding-top: 3rem;
+    margin: auto;
+    width: 70rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-kategorier {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 1.8rem;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 5rem;
+}
+.produktbilder {
+    margin: auto;
+    width: 70rem;
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 470px 470px 470px;
+    grid-template-areas: 
+    'bilde1 bilde2 bilde3'
+    'bilde4 bilde5 bilde6'
+    'bilde7 bilde8 bilde9' ;
+    gap: 1.5rem;
+    outline-color: black;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    justify-content: space-around;
+}
+
+.bilde1,
+.bilde2,
+.bilde3,
+.bilde4,
+.bilde5,
+.bilde6,
+.bilde7,
+.bilde8,
+.bilde9 {
+    width: 300px;
+    height: 380;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.produktside {
+    width: 70rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.venstre {
+    width: 50rem;
+    padding-top: 2rem;
+}
+
+.produktbilde {
+    width: 40rem;
+    margin: auto;
+    height: 60rem;
+}
+
+.mer {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-outfit {
+    display: grid;
+    margin: auto;
+    width: 50rem;
+    display: grid;
+    grid-template-columns: 180px 180px 180px 180px;
+    grid-template-rows: 300px ;
+    grid-template-areas: 
+    'outfit1 outfit2 outfit3 outfit4';
+    gap: 0;
+    outline-color: black;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    justify-content: space-around;
+}
+
+.venstrevenstre {
+    display: flex;
+    flex-direction: row;
+}
+.switch {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+.produktinformasjon {
+    width: 22.5rem;
+    padding: 1rem;
+}
+
+.frakt {
+    width: 22.5rem;
+    padding: 1rem;
+}
+.hoyre {
+    position: sticky;
+    padding-top: 2rem;
+    line-height: 3rem;
+    width: 20rem;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+}
+#produktinfo {
+    position: sticky;
+    top: 3rem;
+    overflow: hidden;
+}
+
+.storrelse {
+    display: flex;
+    flex-direction: row;
+    width: 10rem;
+    align-content: space-between;
+}
+
+.velg {
+    width: 15rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin: auto;
+    background-color: rgb(33, 50, 84);
+    display: flex;
+    justify-content: center;
+}
+.storrelse {
+    display: grid;
+    width: 20rem;
+    display: grid;
+    grid-template-columns: 7px 7px 7px 7px ;
+    grid-template-rows: 50px ;
+    grid-template-areas: 
+    'storrelse1 storrelse2 storrelse3 '
+    'storrelse4 storrelse5 storrelse6 storrelse7';
+    gap: 0;
+    outline-color: black;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    justify-content: space-around;
+}
+.tekstboks {
+    width: 15rem;
+    height: 2rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.epost {
+    width: 100%;
+    height: 20rem;
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+.videre {
+    width: 15rem;
+    height: 2rem;
+    background-color: black;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.handlekurv-layout {
+    width: 90rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.varer {
+    margin: auto;
+    margin-top: 0;
+    width: 40rem;
+    display: grid;
+    grid-template-columns: 9rem 9rem;
+    grid-template-rows: 13rem ;
+    grid-template-areas: 
+    'vare1 vare2'
+    'vare3 vare4'
+    'vare5 vare6';
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: space-around;
+}
+.vare1,
+.vare2,
+.vare3,
+.vare4,
+.vare5,
+.vare6 {
+    display: flex;
+    flex-direction: row;
+}
+.betaling {
+    position: sticky;
+    top: 0;
+    margin: auto;
+    margin-top: 2rem;
+    line-height: 6rem;
+    width: 20rem;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+}
+.rader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 3rem;
+}
+.bekreft {
+    margin: 0.5rem;
+    margin-top: 2rem;
+    width: 20rem;
+    height: 3rem;
+    background-color: rgb(33, 50, 84);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bruker {
+    margin: 0.5rem;
+    width: 20rem;
+    height: 3rem;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.minSlide {display: none}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 640px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(85, 85, 85, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.tekstboks2 {
+    height: 5rem;
+}
