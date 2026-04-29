@@ -1,18 +1,70 @@
 {% extends "base.html" %}
 {% block content %}
-
     <div class="containerindex">
         <div class="container-forsteside">
-            <img src="images/ChatGPT Image 9. mai 2025, 11_10_26.png" alt="">
-            
-            <div class="centered"> <a href="index.html"><h1>Côte Serein</h1></a></div>
-            <div class="centered_lower">
-                <a href="dame1.html"><div><h2>Dame</h2></div></a>
-                <a href="herre1.html"><div><h2>Herre</h2></div></a>
-                <a href="barn1.html"><div><h2>Barn</h2></div></a>
-                <a href="accessories1.html"><div><h2>Accessories</h2></div></a>
+            <img src="{{url_for('static', filename='ChatGPT Image 9. mai 2025, 11_10_26.png')}}" alt="">
+            <div class="top-right">
+                <div class="person">
+                    <a href="/innlogging">
+                        <div><img src="{{url_for('static', filename='logginn.svg')}}" alt=""></div>
+                    </a>
+                </div>
+                <div class="hjerte">
+                    <a href="/favoritter">
+                        <div><img src="{{url_for('static', filename='likt.svg')}}" alt=""></div>
+                    </a>
+                </div>
+                <div class="kurv">
+                    <a href="/handlekurv">
+                        <div><img src="{{url_for('static', filename='vogn.svg')}}" alt=""></div>
+                    </a>
+                </div>
+                <div class="glass">
+                    <div class="sokefunksjon">
+                        <button onclick="sokFunksjon()">
+                            <img class="sokKnapp" src="{{url_for('static', filename='sok.svg')}}" alt="">
+                        </button>
+                        <div id="sokMeny" class="sokinnhold">
+                            <div class="sokboks">
+                                <div class="sokbar">
+                                    <div class="tekst">
+                                        <h4>Hva ser du etter?</h4>
+                                        <div class="ikon1"><img src="{{url_for('static', filename='kryss.svg')}}" alt=""></div>
+                                    </div>
+                                    <div class="skrive">
+                                        <input type="text" placeholder="Skriv her...">
+                                        <div class="sokenter">
+                                            <h5>Søk</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="forslag">
+                                    <div class="populere">
+                                        <h4>Populære søk</h4>
+                                        <ul>
+                                            <li><p>Jakke</p></li>
+                                            <li><p>Bukse</p></li>
+                                            <li><p>kjole</p></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nye">
+                                        <h4>Nyheter</h4>
+                                        <ul>
+                                            <li><p>Jakke</p></li>
+                                            <li><p>Bukse</p></li>
+                                            <li><p>kjole</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>	
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="centered"> 
+                <a href="index.html"><h1>Côte Serein</h1></a>
             </div>
         </div>
-
-    <script src="javascript/script.js"></script>
+    </div>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
 {% endblock %}
