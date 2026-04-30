@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 
+{% if message is defined and message %}
+    <div class="melding">{{ message }}</div>
+{% endif %}
+
      <main>
         <div class="overskrift">
             <h1>Logg inn</h1>
@@ -12,15 +16,16 @@
                 <li>Logg inn</li>
             </ul>
         </div>
-        <div class="epost">
-            <div class="tekstboks">
-                <h3>E-post</h3>
-                <input type="text" onfocus="this.value=''">
-            </div>
-            <div class="videre">
-                <h5>Logg inn</h5>
-            </div>
+        <div class="registrere-skjema">
+            <label for="email">E-post:</label>
+            <input type="email" class="tekstboks" id="email" name="email" placeholder="Skriv inn E-post" name="email">
         </div>
+        <div class="registrere-skjema">
+            <label for="pwd">Passord:</label>
+            <input type="password" class="tekstboks" id="password" name="password" placeholder="Skriv inn passord" name="pswd">
+        </div>
+        <button type="submit" class="videre">Logg inn</button>
+        <p class="bruker-spm">Har du ikke en konto? <a href="/registrere">Registrer deg her</a></p>
     </main>
 {% endblock %}
 <script src="{{url_for('static', filename='script.js')}}"></script>

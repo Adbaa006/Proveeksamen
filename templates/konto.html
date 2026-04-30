@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+  <main>
+        <div class="overskrift">
+            <h1>Brukerprofil</h1>
+        </div>
+        <div class="nav2">
+            <ul class="breadcrumb">
+                <li><a href="/">Hjem</a></li>
+                <li>Brukerprofil</li>
+            </ul>
+        </div>
+        <div class="profil">
+            logget inn : <strong>{{session.name}} | <a href="/loggut">Logg ut</a>
+        </div>
+        <div class="underoverskrift">
+            <p>Velkommen tilbake til Côte Serein. Her kan du se ordrene dine, favoritter og personlig tilpasset innhold. Vi har gjort det enkelt å fortsette der du slapp – sommeren venter på deg</p>
+        </div>
+    </main>
+{% endblock %}

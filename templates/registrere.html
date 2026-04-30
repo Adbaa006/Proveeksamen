@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+
+    {% if message is defined and message %}
+        <div class="melding">{{ message }}</div>
+    {{% endif %}}
+
+   <main>
+        <div class="overskrift">
+            <h1>Registrer deg</h1>
+            <p>Velkommen tilbake til Côte Serein. Registrer deg for å se ordrene dine, favoritter og personlig tilpasset innhold. Vi har gjort det enkelt å fortsette der du slapp – sommeren venter på deg</p>
+        </div>
+        <div class="nav2">
+            <ul class="breadcrumb">
+                <li><a href="/">Hjem</a></li>
+                <li>Registrering</li>
+            </ul>
+        </div>
+        <div class="registrere-skjema">
+            <label for="name">Navn:</label>
+            <input type="text" class="tekstboks" id="name" name="name" placeholder="Skriv inn navn" name="name">
+        </div>
+        <div class="registrere-skjema">
+            <label for="email">E-post:</label>
+            <input type="email" class="tekstboks" id="email" name="email" placeholder="Skriv inn E-post" name="name">
+        </div>
+        <div class="tekstboks">
+            <label for="pwd">Passord:</label>
+            <input type="password" class="tekstboks" id="password" name="password" placeholder="Skriv inn passord" name="pswd">
+        </div>
+        <button type="submit" class="videre">Registrer</button>
+        <p class="bruker-spm">Har du allerede en bruker? <a href="/innlogging">Logg inn her</a></p>
+    </main>
+{% endblock %}
